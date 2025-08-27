@@ -1,7 +1,7 @@
 # headless mode which runs Chrome without opening a visible browser window
 # important: don't let pc sleep otherwise selenium will crash
 
-# run following command in terminal to rin the file:      python .\apt_listing_scraper.py
+# run following command in terminal to rin the file:      python .\scraper_apt_listing.py
 
 import time
 import pandas as pd
@@ -186,4 +186,4 @@ if __name__ == "__main__":
         new_all_data.extend(page_data)
         time.sleep(10)
 
-    save_to_csv(new_all_data, "E:/9_Tableau_Projects/5_Dhaka_apartment_price_analysis/scraped_data/apartment_listing_1_page_1_to_5.csv")
+    save_to_csv(new_all_data, "E:/9_Tableau_Projects/5_Dhaka_apartment_sale_listings_analysis/scraped_data/apartment_listing_1_page_1_to_5.csv")
